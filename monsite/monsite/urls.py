@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('sondages/', include('sondages.urls')),
     path('admin/', admin.site.urls),
+    # path('v1/api/', include('scripts.WeightPredictionAPI.api.urls')),
+    path('sondages/', include('sondages.urls')),
 ]
